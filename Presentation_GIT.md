@@ -1,6 +1,7 @@
 #<p style="text-align:center;"> Présentation de GIT
 
 ## GIT 
+<div style="text-align:justify;">
 GIT est un logiciel de gestion de version basé sur le modèle distribué. Développé par Linus Torvalds, l'auteur de Linux, il est l'un des plus utilisé actuellement et connais un succès grandissant. Le code peut être partagé directement entre deux développeur mais peut également être installé sur le site [GITHUB](http://github.com). Ce site héberge plusieurs millions de projet opensource pour la plupart. Il est toutefois possible d'ouvrir un compte payant pour y créer des dépôts (repository en anglais) privés.
 
 Rentrons maintenant dans le fonctionnement de GIT
