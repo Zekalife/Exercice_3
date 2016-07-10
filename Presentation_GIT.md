@@ -29,13 +29,27 @@ Lorsque le projet progresse, les _commit_ s'accumulent. La consultation de l'his
 
 ![Git Log](git_log.png)
 
-La commande affiche la liste des *commit* de la branche sur laquelle nous sommmes (nous verrons les bracnches au chapitre suivant). Pour chaque *commit*, les informations suivantes s'affichent :
+La commande affiche la liste des *commit* de la branche sur laquelle nous sommes (nous verrons les branches au chapitre suivant). Pour chaque *commit*, les informations suivantes s'affichent :
 
 - le mot *commit* suivi d'un code complexe. Celui-ci est appelé le *SHA* et est un identifiant unique du *commit*.
 - l'auteur du *commit* avec son nom suivi de de son adresse email.
 - Le commentaire du *commit*.
 
-Il est possible à tout moment de restaurer les fichiers telqu'ils étaient lors d'un *commit* en particulier. Pour cela, il faut utiliser la commande : 
+Il est possible à tout moment de restaurer les fichiers tels qu'ils étaient lors d'un *commit* en particulier. Pour cela, il faut utiliser la commande : 
+
+	git checkout sha_du_commit
 	
+le *sha\_du\_commit* est le code s'affichant après le mot *commit* dans l'historique. Cette commande restaure tous les fichiers du projet dans l'état dans lequel ils étaient au moment de ce *commit*.
+
+Il est ainsi possible de consulter chacun des fichiers pour voir les modifications apportées ou de récupérer un extrait de texte qui aurait été supprimé entre temps. 
+
+Pour revenir à l'état final du projet, il faut utiliser la commande :
+
+	git checkout master
+	
+Celle-ci replace les fichiers dans l'état où ils étaient lors du dernier *commit*.
 
 ### Les branches
+Il peut être intéressant, par exemple dans le cadre d'un projet de développement de logiciel, de créer une série de version de fichiers en parallèle du développement principal. Par exemple, pour créer une nouvelle fonctionnalité alors que les corrections de bug de la version actuelle sont effectués dans les fichiers principaux. Cela s'appelle une branche. 
+
+Une branche permet donc d'avoir une
