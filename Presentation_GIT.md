@@ -50,6 +50,6 @@ Pour revenir à l'état final du projet, il faut utiliser la commande :
 Celle-ci replace les fichiers dans l'état où ils étaient lors du dernier *commit*.
 
 ### Les branches
-Il peut être intéressant, par exemple dans le cadre d'un projet de développement de logiciel, de créer une série de version de fichiers en parallèle du développement principal. Par exemple, pour créer une nouvelle fonctionnalité alors que les corrections de bug de la version actuelle sont effectués dans les fichiers principaux. Cela s'appelle une branche. 
+Il peut être intéressant, par exemple dans le cadre d'un projet de développement de logiciel, de créer une série de version de fichiers en parallèle du développement principal. Par exemple, pour créer une nouvelle fonctionnalité alors que les corrections de bug de la version actuelle sont effectuées dans les fichiers principaux. Cela s'appelle une branche. 
 
-Une branche permet donc d'avoir une
+Une branche permet donc d'avoir une série de fichiers qui évoluent indépendamment des autres voire même des fichiers dont le contenu est modifié de deux façon distinctes. Évidemment, Git fourni des outils permettant de fusionner deux branches en une seule avec la possibilité de comparaison le contenu des fichiers ayant été modifier des deux coté.  
