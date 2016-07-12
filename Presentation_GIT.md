@@ -53,3 +53,30 @@ Celle-ci replace les fichiers dans l'état où ils étaient lors du dernier *com
 Il peut être intéressant, par exemple dans le cadre d'un projet de développement de logiciel, de créer une série de version de fichiers en parallèle du développement principal. Par exemple, pour créer une nouvelle fonctionnalité alors que les corrections de bug de la version actuelle sont effectuées dans les fichiers principaux. Cela s'appelle une branche. 
 
 Une branche permet donc d'avoir une série de fichiers qui évoluent indépendamment des autres voire même des fichiers dont le contenu est modifié de deux façon distinctes. Évidemment, Git fourni des outils permettant de fusionner deux branches en une seule avec la possibilité de comparaison le contenu des fichiers ayant été modifier des deux coté.  
+
+Dans notre exemple, une fois la fonctionnalité prête, le code est réintégré dans la branche principale. Cette opération s'appelle *fusionner les branches*. 
+
+Par convention, la branche principale s'appelle toujours *master* par défaut.
+
+Voici les commandes permettant de créer une branche, changer de branche et fusionner deux branches. 
+
+	# Verification de la liste des branches disponible et de la branche active
+	git branch 
+	
+	# Création d'une branche
+	git branch ma-branche
+	
+	# Changement de branche
+	git checkout ma-branche
+	
+	# Retour sur la branche principale
+	git checkout master
+	
+	# Fusionner deux branches
+	# Se placer sur la branche qui va recevoir les modifications
+	# (master) dans notre exemple
+	git branch master
+	
+	git merge ma-branche
+	
+En cas de conflit (fichier modifié dans les deux branches), la liste des fichiers concernés est indiquée. Des outils textuels ou graphiques permettent de repérer et de résoudre les conflits. Nous ne les verrons pas ici car cela sort du cadre de cette présentation. 
